@@ -33,7 +33,7 @@ Gray Leaf Spot memiliki jumlah gambar paling sedikit sehingga distribusi kelas t
 
 Sumber asli dan lisensi dataset belum dicantumkan dalam laporan. Informasi tersebut perlu dilengkapi sebelum dataset didistribusikan melalui repository.
 
-![Contoh gambar setiap kelas](images/sample-images.png)
+<img width="812" height="270" alt="Screenshot 2026-09-28 at 18 32 34" src="https://github.com/user-attachments/assets/369ceec1-54ab-4e49-9970-e87823c74caf" />
 
 ## Tools
 
@@ -106,7 +106,6 @@ Dense: 4096, ReLU
 Dropout: 0.5
 ↓
 Dense: 4, Softmax
-```
 
 Baseline menggunakan optimizer Adam dan categorical cross-entropy, serta dilatih selama 10 epoch tanpa early stopping.
 
@@ -150,7 +149,7 @@ Precision, recall, dan F1-score mengikuti pembulatan dua desimal pada classifica
 
 ### Confusion Matrix
 
-![Confusion matrix model modifikasi pada test set](images/confusion-matrix.png)
+<img width="505" height="431" alt="Screenshot 2026-09-28 at 18 31 59" src="https://github.com/user-attachments/assets/36c10ef9-015b-48be-af76-4439b72f904b" />
 
 Urutan kelas:
 
@@ -165,7 +164,17 @@ Hal ini menunjukkan bahwa kemampuan model membedakan Gray Leaf Spot dan Blight m
 
 ### Kurva Training
 
-![Kurva accuracy dan loss model modifikasi](images/training-curves.png)
+### Baseline
+
+<img width="552" height="401" alt="Screenshot 2026-09-28 at 18 29 56" src="https://github.com/user-attachments/assets/e56eab51-1aaf-42bf-9aa3-045f76aa078b" />
+
+<img width="542" height="385" alt="Screenshot 2026-09-28 at 18 30 17" src="https://github.com/user-attachments/assets/8fa962fa-dff5-45c1-b7b3-64850e74c101" />
+
+### Tuned
+<img width="806" height="491" alt="Screenshot 2026-09-28 at 18 31 09" src="https://github.com/user-attachments/assets/633d35c5-d232-4501-9ae7-daf0c5f13216" />
+
+<img width="806" height="489" alt="Screenshot 2026-09-28 at 18 31 27" src="https://github.com/user-attachments/assets/09fc7fcf-01e9-4d95-a986-8ad0441d2ac9" />
+
 
 Training accuracy meningkat, tetapi validation accuracy dan validation loss masih berfluktuasi. Early stopping digunakan untuk mengembalikan bobot dari epoch dengan validation loss terbaik.
 
@@ -182,8 +191,6 @@ Training accuracy meningkat, tetapi validation accuracy dan validation loss masi
 
 4. **Beberapa komponen diubah sekaligus.**  
    Perubahan arsitektur, learning rate, class weighting, dan pengaturan training dilakukan bersamaan. Eksperimen ini belum mengisolasi kontribusi setiap perubahan.
-
-
 
 
 ## Dataset
