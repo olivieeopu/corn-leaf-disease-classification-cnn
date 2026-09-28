@@ -108,8 +108,7 @@ Dropout: 0.5
 Dense: 4, Softmax
 
 Baseline menggunakan optimizer Adam dan categorical cross-entropy, serta dilatih selama 10 epoch tanpa early stopping.
-
-
+```
 
 ### Model Modifikasi
 
